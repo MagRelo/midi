@@ -18,6 +18,8 @@ import { startTipTimer } from './state/init/timer';
 
 import './css/nunito.css';
 import './css/open-sans.css';
+import './fonts/Rock_Salt/rock-salt.css';
+import './fonts/Roboto_Mono/roboto-mono.css';
 
 // load data
 async function init() {

@@ -30,7 +30,7 @@ h2,
 h3,
 h4 {
   color: #898989;
-  font-family: 'Nunito', 'Open Sans', sans-serif;
+  /* font-family: 'Nunito', 'Open Sans', sans-serif; */
   margin-bottom: 0.5em;
 }
 
@@ -66,9 +66,10 @@ header {
 
 header .title {
   margin: 0.2em 0 0 0;
-  color: yellow;
-  font-size: 3em;
+  color: #ff3636;
+  font-size: 2em;
   font-weight: bold;
+  font-family: 'Rock-Salt'
 }
 
 header ul {
@@ -160,15 +161,7 @@ label.upper {
 
 
 
-@media screen and (min-width: 992px) {
-  .row-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .row-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+@media screen and (min-width: 992px) {}
 
 .iphone {
   max-height: 50vh

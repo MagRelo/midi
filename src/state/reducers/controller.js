@@ -65,7 +65,7 @@ const samples = {
     status: 'ready',
     on: false
   },
-  '': {
+  '123': {
     name: 'breakdown loop',
     howl: new Howl({
       src: ['/sounds/Casio-MT-600-Disco-2.wav']
