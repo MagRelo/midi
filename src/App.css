@@ -25,65 +25,22 @@ body {
 }
 
 header {
-  /* position: fixed; */
-  z-index: 1;
-  width: 100%;
-
   padding-top: 1em;
   background-color: transparent;
+  margin-bottom: 2em;
 }
 
 header .title {
-  margin: 0.2em 0 0 0;
   color: #ff3636;
-  font-size: 2em;
+  /* font-size: 2em; */
   font-weight: bold;
-  font-family: 'Rock-Salt'
-}
-
-header ul {
-  float: right;
-  margin-bottom: 0;
-}
-
-header ul li {
-  display: inline-block;
-  margin-bottom: 1em;
-  margin-left: 1em;
-
-  text-transform: uppercase;
-  font-size: small;
-  font-weight: bold;
-  line-height: 3em;
+  font-family: 'Rock-Salt';
+  margin: 0;
 
 }
 
-
-header ul li:after {
-  content: "▶";
-  margin: 1em 0 0 1em;
-  color: yellow;
-}
-
-header ul li:last-child:after {
-  content: none;
-}
-
-header a {
-  text-decoration: none;
-}
-
-header nav li a {
-  color: yellow;
-  text-decoration: none;
-
-  padding-bottom: .15em;
-  border-bottom: dashed yellow 2px;
-}
-
-
-section {
-  /* min-height: 100vh */
+header p {
+  margin: 0;
 }
 
 .panel {
@@ -92,7 +49,6 @@ section {
   text-align: center;
 }
 
-
 footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -100,18 +56,35 @@ footer {
   padding: 3em 0;
 }
 
-footer h4 {
-  margin-top: 0;
+.control-panel {
+  background-color: #585858;
+  padding: 0 1em 1em 1em;
+  border: 1px solid gray;
 }
 
-label.upper {
-  text-transform: uppercase;
-  font-weight: bold;
+@media screen and (min-width: 992px) {
+
+  header .title {
+    font-size: 2em;
+  }
+
+  .app-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 24em 1fr;
+    grid-gap: 1em;
+  }
+
+  .control-panel {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .controller-wrapper {
+    grid-column: 2;
+  }
+
 }
-
-
-
-@media screen and (min-width: 992px) {}
 
 .iphone {
   max-height: 50vh
