@@ -1,5 +1,4 @@
-body,
-header {
+body {
   background-color: #393939;
   background-image: linear-gradient(0deg,
     transparent 24%,
@@ -25,43 +24,13 @@ header {
   background-size: 50px 50px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: #898989;
-  /* font-family: 'Nunito', 'Open Sans', sans-serif; */
-  margin-bottom: 0.5em;
-}
-
-h1 {
-  font-size: 3.2em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-h4 {
-  font-size: 1.625em;
-}
-
-.highlight-light {
-  color: #bbb;
-}
-
 header {
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   width: 100%;
 
-  padding-top: 0.5em;
-  /* background-color: #393939; */
+  padding-top: 1em;
+  background-color: transparent;
 }
 
 header .title {
@@ -112,42 +81,23 @@ header nav li a {
   border-bottom: dashed yellow 2px;
 }
 
-.App-link {
-  color: yellow;
-}
-
-
-
-.description {
-  max-width: 48em;
-}
 
 section {
-  min-height: 100vh;
-  padding: 67px 0;
+  /* min-height: 100vh */
 }
 
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
+.panel {
+  border: solid 1px gray;
+  padding: 0 1em;
+  text-align: center;
 }
 
-.grey {
-  background-color: #f0f2f7;
-  color: #393939;
-}
 
 footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 4em;
-
   padding: 3em 0;
-
-  /* 
-  text-transform: uppercase;
-  font-size: small;
-  font-weight: bold; */
 }
 
 footer h4 {

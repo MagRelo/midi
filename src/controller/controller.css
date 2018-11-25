@@ -67,8 +67,8 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: grey;
-  border: solid 1px #444;
+  background-color: white;
+  border: solid 1px #dddddd;
 }
 
 .cube__face--front {
@@ -112,9 +112,9 @@
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 35px);
   grid-gap: 10px;
-  border: solid 1px gray;
-  border-radius: 85px;
-  padding: 10px 0 0 10px;
+  /* border: solid 1px white; */
+  /* border-radius: 85px; */
+  padding: 14px 0 0 14px;
   max-width: 50vw;
 }
 
@@ -127,13 +127,19 @@
 }
 
 .pad {
-  border: solid 1px #333;
   border-radius: 35px;
   height: 35px;
+  width: 35px;
+
   font-size: 10px;
+
+  color: #999999;
+  background: white;
+  border: solid 1px #dddddd;
+  box-shadow: #36a8ff 0 0 4px 1px;
 }
 
 
 .pad:hover {
-  background-color: yellow;
+  box-shadow: #36a8ff 0 0 3px 3px;
 }

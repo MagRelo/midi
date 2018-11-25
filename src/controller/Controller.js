@@ -38,17 +38,14 @@ class Controller extends Component {
     return (
       <div className="pad-area">
         <button
-          className="pad"
+          className={
+            (this.props.samples[sample].on ? 'pad-active ' : '') + 'pad'
+          }
           key={sample}
           id={sample}
-          style={
-            this.props.samples[sample].on
-              ? { backgroundColor: 'yellow', color: 'black' }
-              : {}
-          }
           onClick={this.handleClick.bind(this)}
         >
-          {this.props.samples[sample].name}
+          u
         </button>
       </div>
     );
