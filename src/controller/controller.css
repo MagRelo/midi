@@ -94,23 +94,29 @@
   color: #666;
   background: white;
   border: solid 1px #dddddd;
-  box-shadow: #ff3636 0 0 8px 1px;
+  box-shadow: #36a8ff 0 0 8px 1px;
   outline: none;
 }
 
 .pad:active,
 .pad:hover {
   outline: none;
-  box-shadow: #ff3636 0 0 10px 2px;
+  box-shadow: #36a8ff 0 0 10px 2px;
 }
 
 
 .pad:active,
 .pad .pad-active {
   outline: none;
-  box-shadow: #ff3636 0 0 10px 4px;
-  border: solid 1px #ff3636;
+  box-shadow: #36a8ff 0 0 10px 4px;
+  border: solid 1px #36a8ff;
   /* background: #1599ff6d; */
+}
+
+.pad-key,
+.pad-name {
+  display: block;
+  font-size: small;
 }
 
 
@@ -173,11 +179,10 @@
     width: 90px;
   }
 
-
   .pad {
     height: 70px;
     width: 70px;
     border-radius: 100px;
-    font-size: 20px;
+    font-size: 14px;
   }
 }
