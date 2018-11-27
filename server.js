@@ -9,7 +9,7 @@ const morgan = require('morgan');
 // *
 
 // configure express middleware
-app.use(express.static('build'));
+app.use(express.static('build', { maxage: '7d' }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '1mb' }));
 app.use(
