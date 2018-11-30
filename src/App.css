@@ -43,12 +43,6 @@ header p {
   margin: 0;
 }
 
-.panel {
-  border: solid 1px gray;
-  padding: 0 1em;
-  text-align: center;
-}
-
 footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -56,11 +50,15 @@ footer {
   padding: 3em 0;
 }
 
-.control-panel {
+.control-panel {}
+
+.panel {
   background-color: #585858;
-  padding: 0 1em 1em 1em;
-  border: 1px solid gray;
+  border: solid 1px gray;
+  padding: 0 1em;
+  text-align: center;
 }
+
 
 @media screen and (min-width: 992px) {
 

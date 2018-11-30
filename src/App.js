@@ -20,18 +20,21 @@ class App extends Component {
 
           <div className="app-grid">
             <Controller />
-            <div className="control-panel">
-              <h3>MIDI Controller</h3>
-              <div className="panel">
-                <p>
-                  Status:{' '}
-                  {this.props.midiEnabled ? 'Connected!' : '(Not Connected)'}
-                </p>
-              </div>
 
-              <h3>Select Audio Sample Pack</h3>
-              <div className="panel">
-                <p>Load samples</p>
+            <div className="control-panel">
+              <div>
+                <h3>MIDI Controller</h3>
+                <div className="panel">
+                  <p>
+                    Status:{' '}
+                    {this.props.midiEnabled ? 'Connected!' : '(Not Connected)'}
+                  </p>
+                </div>
+
+                <h3>Audio Samples</h3>
+                <div className="panel">
+                  <p>Load samples</p>
+                </div>
               </div>
             </div>
           </div>

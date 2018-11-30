@@ -8,12 +8,12 @@
   margin: 0 auto;
   transition: transform 1s;
   transform-style: preserve-3d;
-  transform: rotateX(25deg) rotateY(0deg) rotateZ(0deg);
+  /* transform: rotateX(25deg) rotateY(0deg) rotateZ(0deg); */
 }
 
-.scene .spin {
+.scene.spin {
   animation: spin 24s linear infinite;
-  transform: rotateX(45deg) rotateY(0deg) rotateZ(0deg);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 
 .cube {
@@ -26,7 +26,7 @@
 
 @keyframes spin {
   100% {
-    transform: rotateX(45deg) rotateY(0deg) rotateZ(360deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
   }
 }
 
@@ -106,11 +106,10 @@
 
 
 .pad:active,
-.pad .pad-active {
+.pad-active.pad {
   outline: none;
   box-shadow: #36a8ff 0 0 10px 4px;
   border: solid 1px #36a8ff;
-  /* background: #1599ff6d; */
 }
 
 .pad-key,

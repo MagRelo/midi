@@ -2,38 +2,6 @@ import { Howl } from 'howler';
 
 const samples = [
   {
-    name: 'space lander',
-    howl: new Howl({
-      src: ['/sounds/Casio-VZ-10M-Space-Lander-C2.wav']
-    }),
-    status: 'ready',
-    on: false
-  },
-  {
-    name: 'oooh',
-    howl: new Howl({
-      src: ['/sounds/Alesis-Fusion-Voice-Oohs-C4.wav']
-    }),
-    status: 'ready',
-    on: false
-  },
-  {
-    name: 'dark pad',
-    howl: new Howl({
-      src: ['/sounds/Ensoniq-ESQ-1-Omen-Pad-C2.wav']
-    }),
-    status: 'ready',
-    on: false
-  },
-  {
-    name: 'atari crunch',
-    howl: new Howl({
-      src: ['/sounds/M-Audio-Venom-Atari-C2.wav']
-    }),
-    status: 'ready',
-    on: false
-  },
-  {
     name: 'kick',
     howl: new Howl({
       src: ['/sounds/Bass-Drum-1.wav']
@@ -62,6 +30,38 @@ const samples = [
     name: 'crash',
     howl: new Howl({
       src: ['/sounds/Crash-Cymbal-1.wav']
+    }),
+    status: 'ready',
+    on: false
+  },
+  {
+    name: 'space lander',
+    howl: new Howl({
+      src: ['/sounds/Casio-VZ-10M-Space-Lander-C2.wav']
+    }),
+    status: 'ready',
+    on: false
+  },
+  {
+    name: 'oooh',
+    howl: new Howl({
+      src: ['/sounds/Alesis-Fusion-Voice-Oohs-C4.wav']
+    }),
+    status: 'ready',
+    on: false
+  },
+  {
+    name: 'dark pad',
+    howl: new Howl({
+      src: ['/sounds/Ensoniq-ESQ-1-Omen-Pad-C2.wav']
+    }),
+    status: 'ready',
+    on: false
+  },
+  {
+    name: 'atari crunch',
+    howl: new Howl({
+      src: ['/sounds/M-Audio-Venom-Atari-C2.wav']
     }),
     status: 'ready',
     on: false
@@ -131,11 +131,6 @@ const samples = [
     on: false
   }
 ];
-
-const sampleTemplate = {
-  name: '',
-  howl: null
-};
 
 const initialState = {
   samples: samples
