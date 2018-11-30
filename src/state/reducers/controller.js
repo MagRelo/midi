@@ -11,17 +11,17 @@ const samples = [
     type: 'drum'
   },
   {
-    name: 'snare',
+    name: 'closed hat',
     howl: new Howl({
-      src: ['/sounds/Ensoniq-ESQ-1-Snare.wav']
+      src: ['/sounds/Closed-Hi-Hat-1.wav']
     }),
     status: 'ready',
     on: false
   },
   {
-    name: 'closed hat',
+    name: 'snare',
     howl: new Howl({
-      src: ['/sounds/Closed-Hi-Hat-1.wav']
+      src: ['/sounds/Ensoniq-ESQ-1-Snare.wav']
     }),
     status: 'ready',
     on: false
