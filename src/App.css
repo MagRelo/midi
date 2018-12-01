@@ -1,36 +1,19 @@
 header {
-  padding-top: 1em;
+  /* padding-top: 2em;
+  margin-bottom: 2em; */
   background-color: transparent;
-  margin-bottom: 2em;
 }
 
 header .title {
-  color: #ff3636;
-  /* font-size: 2em; */
-  font-weight: bold;
   font-family: 'Rock-Salt';
-  margin: 0;
-
+  font-weight: bold;
+  margin-bottom: 0.33em;
 }
 
 header p {
   margin-top: 0;
-  max-width: 40em;
+  /* max-width: 40em; */
 }
-
-.control-panel {}
-
-.control-panel h3 {
-  margin-bottom: 0.4em;
-}
-
-.panel {
-  background-color: #585858;
-  border: solid 1px gray;
-  padding: 0 1em;
-  text-align: center;
-}
-
 
 footer {
   display: grid;
@@ -45,21 +28,13 @@ footer {
     font-size: 2em;
   }
 
-  .app-grid {
+
+  section {
+    height: 100vh;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 24em 1fr;
-    grid-gap: 1em;
+    grid-template-rows: auto 1fr;
   }
 
-  .control-panel {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .controller-wrapper {
-    grid-column: 2;
-  }
 
 }
 

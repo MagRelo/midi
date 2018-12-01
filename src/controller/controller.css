@@ -1,6 +1,53 @@
+.control-panel {}
+
+.control-panel .heading {
+  margin-bottom: 0.4em;
+}
+
+.panel {
+  background-color: #2f2f2f;
+  border: solid 1px gray;
+  border-radius: 0.5em;
+  padding: 0 1em;
+  text-align: center;
+
+
+}
+
+.panel>p {
+
+  font-family: 'Roboto-Mono';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
+.panel.enabled>p {
+  font-family: 'Rock-Salt';
+  font-size: 1em;
+  text-transform: none;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #36a8ff, 0 0 30px #36a8ff, 0 0 40px #36a8ff, 0 0 55px #36a8ff, 0 0 75px #36a8ff;
+  letter-spacing: 0.125em;
+
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
 .stage {
   perspective: 600px;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
 .scene {
@@ -67,6 +114,8 @@
   width: 60px;
 }
 
+
+
 .controller {
   height: 100%;
   display: grid;
@@ -113,6 +162,8 @@
 @media screen and (min-width: 1150px) {
   .stage {
     perspective: 180vw;
+    flex: auto;
+    margin-bottom: 200px;
   }
 
   .scene {
@@ -156,6 +207,29 @@
     width: 120px;
   }
 
+
+  .controller-wrapper {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .app-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 24em 1fr;
+    grid-gap: 1em;
+  }
+
+
+
+  .control-panel {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+
   .controller {
     height: 100%;
     display: grid;
@@ -171,14 +245,10 @@
 
 
   .pad {
-    height: 35px;
-    width: 35px;
-    border-radius: 35px;
-
-    color: #555;
-    font-size: 6px;
-    font-weight: bold;
-    text-transform: uppercase;
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    font-size: 10px;
 
     background: white;
     border: none;
@@ -188,13 +258,13 @@
 
   .pad:hover {
     outline: none;
-    box-shadow: #36a8ff 0 0 4px 8px;
+    box-shadow: #36a8ff 0 0 6px 6px;
   }
 
   .pad:active,
   .pad-active.pad {
     outline: none;
-    box-shadow: #36a8ff 0 0 0 7px;
+    box-shadow: #36a8ff 0 0 0 5px;
     background: #36a8ff;
     color: white
   }

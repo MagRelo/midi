@@ -21,7 +21,7 @@ class App extends Component {
               >
                 MIDIFighter 3D
               </a>{' '}
-              to your computer and play live on on the web.
+              to your computer and play live in your web browser.
             </p>
           </header>
 
