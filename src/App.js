@@ -11,32 +11,16 @@ class App extends Component {
       <div className="App">
         <section id="home">
           <header>
-            <h1 className="title">(Web) MIDI Fighter 3D</h1>
+            <h1 className="title">WebMIDI Fighter 3D</h1>
             <p>
-              Connect any MIDI instrument to your computer and play live on on
-              the web.
+              Connect your{' '}
+              <a href="https://www.midifighter.com">MIDIFighter 3D</a> to your
+              computer and play live on on the web.
             </p>
           </header>
 
           <div className="app-grid">
-            <Controller />
-
-            <div className="control-panel">
-              <div>
-                <h3>MIDI Controller</h3>
-                <div className="panel">
-                  <p>
-                    Status:{' '}
-                    {this.props.midiEnabled ? 'Connected!' : '(Not Connected)'}
-                  </p>
-                </div>
-
-                <h3>Audio Samples</h3>
-                <div className="panel">
-                  <p>Load samples</p>
-                </div>
-              </div>
-            </div>
+            <Controller samples={this.props.samples} />
           </div>
         </section>
       </div>
@@ -45,7 +29,11 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  return {};
+  return {
+    samples: state.controller.samples,
+    controllerEnabled: state.controller.controllerEnabled,
+    controllerName: state.controller.controllerName
+  };
 };
 
 const mapDispatchToProps = dispatch => {

@@ -133,7 +133,9 @@ const samples = [
 ];
 
 const initialState = {
-  samples: samples
+  samples: samples,
+  controllerEnabled: false,
+  controllerName: ''
 };
 
 const controllerReducer = (state = initialState, action) => {
