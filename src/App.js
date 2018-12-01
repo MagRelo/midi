@@ -14,14 +14,18 @@ class App extends Component {
             <h1 className="title">WebMIDI Fighter 3D</h1>
             <p>
               Connect your{' '}
-              <a href="https://www.midifighter.com">MIDIFighter 3D</a> to your
-              computer and play live on on the web.
+              <a
+                href="https://www.midifighter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MIDIFighter 3D
+              </a>{' '}
+              to your computer and play live on on the web.
             </p>
           </header>
 
-          <div className="app-grid">
-            <Controller samples={this.props.samples} />
-          </div>
+          <Controller samples={this.props.samples} />
         </section>
       </div>
     );

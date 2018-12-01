@@ -14,9 +14,23 @@ header .title {
 }
 
 header p {
-  margin: 0;
+  margin-top: 0;
   max-width: 40em;
 }
+
+.control-panel {}
+
+.control-panel h3 {
+  margin-bottom: 0.4em;
+}
+
+.panel {
+  background-color: #585858;
+  border: solid 1px gray;
+  padding: 0 1em;
+  text-align: center;
+}
+
 
 footer {
   display: grid;
